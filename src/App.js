@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import MainButton from './components/main-button/index.js';
+import SecondaryButton from './components/secondary-button/index.js';
+import SearchBar from './components/search-bar/index.js';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBar />
+      <SecondaryButton>say Hello</SecondaryButton>
+      <MainButton >Login</MainButton>
     </div>
   );
 }

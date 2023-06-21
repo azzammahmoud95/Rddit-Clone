@@ -1,0 +1,23 @@
+.navbar{
+    background-color: white;
+    height: 50px;
+    display: flex;
+}
+.Redditlogo{
+    width: 100px;
+    height: 60px;
+    margin-left: 20px;
+}
+.searchreddit{
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #F6F7F8;
+    border: 1px solid #EDEFF1;
+    border-radius: 1.25em;
+    box-shadow: none;
+    flex-grow: 1;
+    max-width: 690px;
+    margin-left: 300px;
+    height: 40px;
+    margin-top: 7px;
+}
