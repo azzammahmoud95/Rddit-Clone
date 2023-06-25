@@ -1,0 +1,174 @@
+.sidebar {
+    background-color: #fff;
+    color: #1c1c1c;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    overflow: hidden;
+    position: sticky;
+    width: 270px;
+    z-index: 4;
+    height: 93dvh;
+    top: 66px;
+
+}
+
+.sidebarMenu {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebarFooter {
+    padding: 20px 24px 40px;
+}
+
+.sidebarFooterText {
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 4px 24px 22px 0;
+    text-align: start;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+    color: #1c1c1c;
+}
+
+.menuSubTitle {
+    padding: 16px 24px 8px;
+    color: #878a8c;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.menuLinks {
+    padding: 8px 24px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+.menuLinks:hover {
+    background-color: #f6f7f8;
+}
+
+.menuLinks svg {
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.menuLinks span {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 8px;
+    max-width: 208px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.topicsLinks {
+    height: unset;
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #1c1c1c;
+    padding: 8px 4px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+
+.topicsLinks:hover {
+    background-color: #f6f7f8;
+}
+
+.link {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.linkIcon1 {
+    flex: 0 0;
+    font-size: 20px;
+    height: 20px;
+    margin-right: 12px;
+    min-width: 20px;
+    width: 20px;
+}
+
+.linkLabel {
+    flex: 1 1 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.linkIcon2 svg {
+    font-size: 20px;
+    font-weight: 400;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.linkIcon2 {
+    transition: 0.2s;
+}
+
+.linkIcon2.rotate {
+    rotate: 180deg;
+}
+
+.linksDropDown {
+    margin-left: 52px;
+    margin-right: 20px;
+    border-bottom: 1px solid #edeff1;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.linksDropDownLink {
+    box-sizing: border-box;
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #1c1c1c;
+    padding: 8px 4px;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    height: 40px;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
+.linksDropDownLink:hover {
+    background-color: #f6f7f8;
+}

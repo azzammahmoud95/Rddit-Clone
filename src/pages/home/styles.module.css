@@ -1,0 +1,12 @@
+.sectionsTitle{
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 18px;
+ color: var(--font-color);
+ text-transform: unset;  
+ font-family: var(--ibm-font-family);
+ margin: 10px 0px;
+}
+.layoutMenus{
+    display: flex;
+}

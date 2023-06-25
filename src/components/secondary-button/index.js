@@ -24,6 +24,7 @@ export default function secondaryButton(props) {
         },
       }}
       style={props.style}
+      onClick={props.onClick}
     >
       {props.children}
     </Button>

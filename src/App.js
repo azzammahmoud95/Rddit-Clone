@@ -1,13 +1,11 @@
-import './App.css';
-import MainButton from './components/main-button/index.js';
-import SecondaryButton from './components/secondary-button/index.js';
-import SearchBar from './components/search-bar/index.js';
+import "./App.css";
+
+import AllRoutes from "./components/routes/index.js";
+// import Layout from './components/layout/index.js';
 function App() {
   return (
     <div className="App">
-      <SearchBar />
-      <SecondaryButton>say Hello</SecondaryButton>
-      <MainButton >Login</MainButton>
+      <AllRoutes />
     </div>
   );
 }

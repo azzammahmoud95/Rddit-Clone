@@ -10,48 +10,49 @@ export default function SearchBar() {
 
 
   const handleFocus = () => {
-    setInputFocused(true);
+    setInputFocused(!inputFocused);
   };
 
-  const handleBlur = () => {
-    setInputFocused(false);
-  };
 
   return (
     <Autocomplete
-      disablePortal
+      // disablePortal
       options={options}
       freeSolo
       type="text"
-      fullWidth
+      // fullWidth
       size="small"
       style={{
-        outlineOffset: "0px",
+        // outlineOffset: "0px",
+        marginTop:'10px',
         outline: "none",
+        width:'40%',
         borderRadius: inputFocused ? "0rem" : "1.2rem",
-        backgroundColor: "var(--grey-color)",
+        backgroundColor: "white",
       }}
       renderInput={(params) => (
         <TextField
           {...params}
           placeholder="Search Reddit"
           color="primary"
-          InputProps={{
-            style: {
-              borderTopLeftRadius: "1.2rem",
-              borderTopRightRadius: "1.2rem",
-              borderBottomLeftRadius: inputFocused ? "0rem" : "1.2rem",
-              WebkitBorderBottomRightRadius: inputFocused ? "0rem" : "1.2rem",
-            },
-            startAdornment: (
-              <InputAdornment position="start">
-                <IconButton size="small">
-                  <SearchIcon fontSize="large"/>
-                </IconButton>
-              </InputAdornment>
-            ),
-            onFocus: handleFocus,
-            onBlur: handleBlur,
+            InputProps={{
+              style: {
+                borderTopLeftRadius: "1.2rem",
+                borderTopRightRadius: "1.2rem",
+                borderBottomLeftRadius: inputFocused ? "0rem" : "1.2rem",
+                borderBottomRightRadius: inputFocused ? "0rem" : "1.2rem",
+                backgroundColor: !inputFocused ? "var(--secondary-color)" : "white",
+                margin:'0',
+              },
+              startAdornment: (
+                <InputAdornment position="start">
+                  <IconButton size="small">
+                    <SearchIcon fontSize="large"/>
+                  </IconButton>
+                </InputAdornment>
+              ),
+              onFocus: handleFocus,
+              onBlur: handleFocus,
           }}
         />
       )}

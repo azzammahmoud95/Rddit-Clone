@@ -1,0 +1,31 @@
+.cardWrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 210px;
+    height: 180px;
+    padding: 0 16px 9px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    
+    
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#000,rgba(0,0,0,.3) 25%,rgba(0,0,0,.2) 50%,rgba(0,0,0,.1) 75%,rgba(0,0,0,.05));
+    border-radius: 15px;
+  }
+.accountInfoWrapper{
+    display: flex;
+}

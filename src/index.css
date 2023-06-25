@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700;800&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family:  'Segoe UI','Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #DAE0E6;
+  background-color: #dae0e6;
 }
-*{font-family:'Courier New', Courier, monospace;}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-:root{
-  --primary-color: #ff4500;  
+:root {
+  --primary-color: #ff4500;
   --secondary-color: #f6f7f8;
-  --grey-color:#DAE0E6;
+  --grey-color: #dae0e6;
+  --font-color: #1a1a1b;
+  --noto-font-family: "Noto Sans", Arial, sans-serif;
+  --ibm-font-family:'IBM Plex Sans',Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
 }
