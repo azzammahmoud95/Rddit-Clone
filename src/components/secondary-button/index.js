@@ -16,7 +16,7 @@ export default function secondaryButton(props) {
         lineHeight: "17px",
         minHeight: "32px",
         minWidth: "32px",
-        borderRadius: "9999px",
+        borderRadius: "50%",
         transition: "none",
         "&:hover": {
           background: "#dae0e6",
